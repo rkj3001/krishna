@@ -57,16 +57,16 @@
         gap: 0.5rem;
     }
 
-    .services_container {
+    .projects_container {
         grid-template-columns: max-content;
         justify-content: center;
     }
 
-    .services_content {
+    .projects_content {
         padding-right: 3.5rem;
     }
 
-    .services_modal {
+    .projects_modal {
         padding: 0 0.5rem;
     }
 
@@ -228,15 +228,15 @@
         grid-template-columns: 0.5fr;
     }
 
-    .services_icon {
+    .projects_icon {
         font-size: 2rem;
     }
 
-    .services_content {
+    .projects_content {
         padding: 6rem 0 2rem 2.5rem;
     }
 
-    .services_modal-content {
+    .projects_modal-content {
         width: 450px;
     }
 
@@ -308,7 +308,7 @@
         transform: translateX(-6rem);
     }
 
-    .services_container {
+    .projects_container {
         grid-template-columns: repeat(3, 238px);
     }
 

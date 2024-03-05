@@ -485,118 +485,8 @@ svg:hover{
   cursor: pointer;
 }
 
-.skills_icon,
-.skills_arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
 
-.skills_icon {
-  margin-right: var(--mb-0-75);
-}
 
-.skills_title {
-  font-size: var(--h3-font-size);
-}
-
-.skills_subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills_arrow {
-  margin-left: auto;
-  transition: 0.4s;
-}
-
-.skills_list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills_titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skills_name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills_bar,
-.skills_percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
-.skills_bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills_percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills_html {
-  width: 90%;
-}
-
-.skills_css {
-  width: 80%;
-}
-
-.skills_js {
-  width: 70%;
-}
-
-.skills_react {
-  width: 85%;
-}
-
-.skills_php {
-  width: 90%;
-}
-
-.skills_node {
-  width: 70%;
-}
-
-.skills_firebase {
-  width: 60%;
-}
-
-.skills_python {
-  width: 65%;
-}
-
-.skills_figma {
-  width: 60%;
-}
-
-.skills_sketch {
-  width: 70%;
-}
-
-.skills_photoshop {
-  width: 80%;
-}
-
-.skills_close .skills_list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills_open .skills_list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills_open .skills_arrow {
-  transform: rotate(-180deg);
-}
 
 /*==================== QUALIFICATION ====================*/
 .qualification_tabs {
@@ -670,48 +560,53 @@ svg:hover{
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
-.services_container {
+/*==================== projects ====================*/
+
+.uil-blockchain{
+  
+}
+.projects_container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.services_content {
+.projects_content {
   position: relative;
   background-color: var(--container-color);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 2px 4px rgb(0 0 0 / 34%);
   transition: 0.3s;
 }
 
-.services_content:hover {
+.projects_content:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.services_icon {
+.projects_icon {
   display: block;
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
 
-.services_title {
+.projects_title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
 
-.services_button {
+.projects_button {
   cursor: pointer;
   font-size: var(--small-font-size);
 }
 
-.services_button:hover .button_icon {
+.projects_button:hover .button_icon {
   transform: translateX(0.25rem);
 }
 
-.services_modal {
+.projects_modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -728,28 +623,28 @@ svg:hover{
   transition: 0.3s;
 }
 
-.services_modal-content {
+.projects_modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.services_modal-services {
+.projects_modal-projects {
   row-gap: 1rem;
 }
 
-.services_modal-service {
+.projects_modal-project {
   display: flex;
 }
 
-.services_modal-title {
+.projects_modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
 
-.services_modal-close {
+.projects_modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -758,7 +653,7 @@ svg:hover{
   cursor: pointer;
 }
 
-.services_modal-icon {
+.projects_modal-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
