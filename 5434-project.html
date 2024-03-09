@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="./assets/css/project.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="icon" href="./assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+  <header>
+    <div>
+      <h1 class="rubik-doodle">Projects</h1>
+    </div>
+  </header>
+  <div class="tab-buttons">
+    <button class="tab-button active-tab-button" onclick="toggleTab(0)">Fun with CSS</button>
+    <button class="tab-button" onclick="toggleTab(1)">Fullstack</button>
+    <button class="tab-button" onclick="toggleTab(2)">WEb 3.0</button>
+</div>
+<div class="tab" id="css">
+  <section class="cards-wrapper-css"></section>
+
+</div>
+<div class="tab" id="FullStack">
+  <section class="cards-wrapper-fullStack"></section>
+
+</div>
+<div class="tab" id="web3">
+  <section class="cards-wrapper-web3"></section>
+
+</div>
+
+  
+  
+  <script>
+//     // Declare projects array to store project data
+//     const projects = [
+//       {
+//         id: 1,
+//         num: '01',
+//         title: 'Squid Game Loaders',
+//         link: 'https://codewithfaraz.com/content/16/amazing-pure-css-squid-game-loaders-using-html-and-css',
+//         image: 'https://codewithfaraz.com/img/squid-game-loader.png',
+//         date: '',
+//         tags: ['CSS']
+//       },
+//       {
+//         id: 2,
+//         num: '02',
+//         title: 'Glowing Pulse Search Bar',
+//         description: 'Loaders are one of the classic components used to create an attractive website…',
+//         link: 'https://codewithfaraz.com/content/2/glowing-pulse-search-bar-using-html-and-pure-css',
+//         image: 'https://codewithfaraz.com/img/glowing.png',
+//         date: '13 July 2022',
+//         tags: ['CSS']
+//       },
+//       {
+//         id: 3,
+//         num: '03',
+//         title: 'Digital Clock',
+//         link: 'https://codewithfaraz.com/content/1/create-a-digital-clock-using-html-css-and-javascript',
+//         image: 'https://codewithfaraz.com/img/digitalclock.png',
+//         date: '12 July 2022',
+//         tags: ['CSS']
+//       },
+//       {
+//         id: 4,
+//         num: '03',
+//         title: 'Digital Clock',
+//         link: 'https://codewithfaraz.com/content/1/create-a-digital-clock-using-html-css-and-javascript',
+//         image: 'https://codewithfaraz.com/img/digitalclock.png',
+//         date: '12 July 2022',
+//         tags: ['CSS'],
+//         git: 'https://codewithfaraz.com/img/digitalclock.png',
+//         git1:"GIT"
+//       }
+//     ];
+
+//     // Function to create HTML structure for a project card
+//     const createProjectCard = (project) => {
+//       return `
+//         <div class="card-grid-space">
+          
+//           <a class="card" href="${project.link}" style="--bg-img: url('${project.image}')">
+//             <div>
+//               <h1>${project.title}</h1>
+//               <p>${project.description}</p>
+//               <div class="date">${project.date}</div>
+              
+//               <div class="tags">
+//                 ${project.tags.map(tag => `<div class="tag">${tag}</div>`).join('')}
+//               </div>
+//             </div>
+//           </a>
+//           <a  href="${project.git}" target="_blank" class="button button--flex button--small git_button">Git<i class="uil uil-arrow-right button_icon"></i></a>
+
+//         </div>
+//       `;
+//     };
+
+//     // Function to render project cards
+//     const renderProjectCards = () => {
+//       const cardsWrapper = document.querySelector('.cards-wrapper');
+//       projects.forEach(project => {
+//         const cardHtml = createProjectCard(project);
+//         cardsWrapper.innerHTML += cardHtml;
+//       });
+//     };
+
+//     // Call the function to render project cards
+//     renderProjectCards();
+
+
+//     function toggleTab(tabIndex) {
+//   let tabs = document.getElementsByClassName("tab");
+
+//   for (let i = 0; i < tabs.length; i++) {
+//       tabs[i].style.display = "none";
+//   }
+//   tabs[tabIndex].style.display = "block";
+
+//   // Remove the 'active-tab-button' class from all buttons
+//   let buttons = document.getElementsByClassName("tab-button");
+//   for (let i = 0; i < buttons.length; i++) {
+//       buttons[i].classList.remove("active-tab-button");
+//   }
+
+//   // Add the 'active-tab-button' class to the clicked button
+//   buttons[tabIndex].classList.add("active-tab-button");
+// }
+
+//toggleTab(0);
+
+//  </script>
+
+<script type="text/javascript" src="./assets/js/project.js"></script>
+<script type="text/javascript" src="./assets/js/json.js"></script>
+
+</body>
+</html>

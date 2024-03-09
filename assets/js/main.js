@@ -72,27 +72,17 @@ tabs.forEach((tab) => {
 });
 
 /*==================== projects MODAL ====================*/
-const modalViews = document.querySelectorAll(".projects_modal"),
-    modalBtns = document.querySelectorAll(".projects_button"),
-    modalCloses = document.querySelectorAll(".projects_modal-close");
-
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add("active-modal");
-};
+const modalBtns = document.querySelectorAll(".projects_button");
 
 modalBtns.forEach((modalBtn, i) => {
     modalBtn.addEventListener("click", () => {
-        modal(i);
+     
+
+      localStorage.setItem("index", i);
+      window.location.href = "5434-project.html";
     });
 });
 
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener("click", () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove("active-modal");
-        });
-    });
-});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio_container", {
