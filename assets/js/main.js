@@ -1,3 +1,8 @@
+
+// $(document).ready(function(){
+//     renderProjectSwipper();
+//   });
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.querySelector("#nav-menu");
 const navToggle = document.querySelector("#nav-toggle");
@@ -84,7 +89,37 @@ modalBtns.forEach((modalBtn, i) => {
 });
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== PROJECT SWIPER  ====================*/
+const createProjectSwipper = (project) => {
+    return `
+        <div class="portfolio_content grid swiper-slide">
+            <img src="${project.image}" href="${project.link}"  alt="portfolio image" class="portfolio_img" >
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title">${project.title}</h3>
+                    <p class="portfolio_description">${project.description}</p>
+                    <a href="${project.link}" target="_blank" class="button button--flex button--small portfolio_button">
+                        Demo
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </a>
+                </div>
+        </div>
+    `;
+  };
+
+  const renderProjectSwipper = () => {
+   // const cardsWrapperCss = document.querySelector(".swiper-wrapper");
+    const cardsWrapperCss = document.querySelector("#portfolio_container");
+
+  
+    recentData.forEach(project => {
+            const cardHtml = createProjectSwipper(project);
+            cardsWrapperCss.innerHTML += cardHtml;
+          });
+ 
+
+    
+  };
+
 let swiperPortfolio = new Swiper(".portfolio_container", {
     cssMode: true,
     loop: true,

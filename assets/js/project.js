@@ -1,7 +1,8 @@
 
 $(document).ready(function(){
     var i =  localStorage.getItem('index');
-    localStorage.removeItem("index")
+  //  localStorage.removeItem("index")
+    renderProjectCards();
     toggleTab(i)
   });
 
@@ -15,7 +16,7 @@ $(document).ready(function(){
     return `
       <div class="card-grid-space">
         
-        <a class="card" href="${project.link}" style="--bg-img: url('${project.image}')">
+        <a class="card"  target="_blank"  href="${project.link}" style="--bg-img: url('${project.image}')">
           <div>
             <h1>${project.title}</h1>
             <p>${project.description}</p>
@@ -35,9 +36,9 @@ $(document).ready(function(){
 // ===================================== renderProjectCards =================================================
 
   const renderProjectCards = () => {
-    const cardsWrapperCss = document.querySelector(".cards-wrapper-css");
-    const cardsWrapperFullStack=  document.querySelector(".cards-wrapper-fullStack");
-    const cardsWrapperWeb3 =  document.querySelector(".cards-wrapper-web3");
+    const cardsWrapperCss = document.querySelector(".css");
+    const cardsWrapperFullStack=  document.querySelector(".fullStack");
+    const cardsWrapperWeb3 =  document.querySelector(".web3");
   
         data[0].CSS.forEach(project => {
             const cardHtml = createProjectCard(project);
@@ -78,5 +79,5 @@ $(document).ready(function(){
 
     // Add the 'active-tab-button' class to the clicked button
     buttons[tabIndex].classList.add("active-tab-button");
-    renderProjectCards();
+    
  }

@@ -664,35 +664,6 @@ svg:hover{
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-
-.project_bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project_title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project_description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project_title,
-.project_description {
-  color: #fff;
-}
-
-.project_img {
-  width: 232px;
-  justify-self: center;
-}
-
 /*==================== TESTIMONIAL ====================*/
 .testimonial_data,
 .testimonial_header {
@@ -736,12 +707,15 @@ svg:hover{
 /*==================== CONTACT ME ====================*/
 .contact_container {
   row-gap: 3rem;
+  border: 5px solid;
+  border-radius: 20px;
 }
 
 .contact_information {
   display: flex;
-  margin-bottom: var(--mb-2);
-}
+  /* margin-bottom: var(--mb-2); */
+  margin: var(--mb-2);
+  }
 
 .contact_icon {
   font-size: 2rem;
@@ -752,6 +726,9 @@ svg:hover{
 .contact_title {
   tab-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+}
+.contact_title:hover {
+  color: var(--first-color-second);
 }
 
 .contact_subtitle {
@@ -785,6 +762,12 @@ svg:hover{
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.underLine:hover{
+  text-decoration: underline;
+  color: var(--first-color-second);
+  /* font-size: var(--normal-font-size); */
+
+}
 /*==================== FOOTER ====================*/
 .footer_container {
   row-gap: 3.5rem;
