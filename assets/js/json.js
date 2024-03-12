@@ -4,12 +4,12 @@ const data = [
             {
                 "id": 1,
                 "num": "01",
-                "title": "valentine Letter",
-                "link": "https://doyoulovememu.netlify.app/valentine/valantine.html",
+                "title": "Login Form",
+                "link": "https://superb-croissant-dd0be6.netlify.app/multiloginpage/multiloginpagelogin",
                 "image": "./asse",
                 "description": "Loaders are one of the classic components used to create an attractive website…",
                 "date": "",
-                "git": "https://github.com/rkj3001/DoYouLoveMe",
+                "git": "https://github.com/rkj3001/funWithCSS/tree/master/MultiLoginPage",
                 "tags": [
                   "CSS"
                 ]
