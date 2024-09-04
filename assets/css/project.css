@@ -129,6 +129,26 @@ a {
     transform-origin: bottom;
     /* font-weight: 700; */
 }
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+.projects_button {
+  cursor: pointer;
+}
+
+.projects_button:hover .button_icon {
+  transform: translateX(-0.25rem);
+}
+/* ================================ lay out============================================ */
+
 /* ======================================== card css ================================== */
 
 .cards-wrapper {
