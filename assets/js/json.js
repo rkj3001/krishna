@@ -30,6 +30,19 @@ const data = [
                 "tags": [
                 "CSS", "HTML", "JavaScript"
                 ]
+            },
+            {
+                "id": 2,
+                "num": "02",
+                "title": "User Management",
+                // "link": "https://rkj3001.github.io/krishna/",
+                "image": "./assets/img/Picture1.jpg",
+                "description": " Java-based user management system leverages JUnit for robust testing and exposes a RESTful API for efficient user data management.",
+                "date": "",
+                "git": "https://github.com/rkj3001/user_List_managment_java",
+                "tags": [
+                "Java", "JUnit 5", "RESTful API "
+                ]
             }
         ]
     },
