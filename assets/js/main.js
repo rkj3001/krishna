@@ -111,10 +111,10 @@ const createProjectSwipper = (project) => {
     const cardsWrapperCss = document.querySelector("#portfolio_container");
 
   
-    recentData.forEach(project => {
-            const cardHtml = createProjectSwipper(project);
-            cardsWrapperCss.innerHTML += cardHtml;
-          });
+    // recentData.forEach(project => {
+    //         const cardHtml = createProjectSwipper(project);
+    //         cardsWrapperCss.innerHTML += cardHtml;
+    //       });
  
 
     
